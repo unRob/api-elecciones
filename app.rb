@@ -4,7 +4,6 @@ require 'bundler'
 require 'open-uri'
 Bundler.require
 
-RPATITO = "http://representantes.pati.to/busqueda/geo/diputados/%s/%s"
 GOOGLE = "https://maps.googleapis.com/maps/api/geocode/json?%s&api_key=AIzaSyD8qYIlRcEaYrYrAjKtE6Rz8XoMisOhiGI"
 
 before do
@@ -24,23 +23,8 @@ get '/' do
   File.open('./README.md', 'r').read.scan(/```([^`]+)/).first
 end
 
-def distrito coords
-  url = sprintf(RPATITO, *coords);
-  res = open(url).read;
-  data = JSON.parse(res, symbolize_names: true)
-
-  if data[:status] == 'error'
-    return false
-  end
-
-  data[:distrito] = data[:distrito].gsub('df-', '')
-
-  data
-end
-
 
 get '/casillas/?:seccion' do |seccion|
-
   path = "./public/data/casillas/#{seccion}.json"
 
   e, s = seccion.split('-')
