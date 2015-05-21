@@ -1,0 +1,56 @@
+[ 2015-05-20 21:52:31.8661 19326/0x7fff789e5300 agents/Watchdog/Main.cpp:538 ]: Options: { 'analytics_log_user' => 'rob', 'cleanup_pidfiles' => 'L3Zhci9mb2xkZXJzLzRqLzJqZjRxejY5NGJ6MDFsejI4MnZtOHMwdzAwMDBnbi9UL3Bhc3Nlbmdlci1zdGFuZGFsb25lLjE2a3N1MjIvdGVtcF9kaXJfdG91Y2hlci5waWQ=', 'default_group' => 'staff', 'default_python' => 'python', 'default_ruby' => '/usr/local/Cellar/ruby/2.2.1/bin/ruby', 'default_user' => 'rob', 'log_level' => '0', 'max_pool_size' => '6', 'passenger_root' => '/var/folders/4j/2jf4qz694bz01lz282vm8s0w0000gn/T/passenger-standalone.16ksu22/locations.ini', 'passenger_version' => '4.0.59', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_passenger_version' => '4.0.59', 'web_server_pid' => '19325', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '-1', 'web_server_worker_uid' => '-1' }
+[ 2015-05-20 21:52:31.9022 19328/0x7fff789e5300 agents/HelperAgent/Main.cpp:650 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.19325/generation-0/request
+[ 2015-05-20 21:52:31.9265 19330/0x7fff789e5300 agents/LoggingAgent/Main.cpp:321 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.19325/generation-0/logging
+[ 2015-05-20 21:52:31.9267 19326/0x7fff789e5300 agents/Watchdog/Main.cpp:728 ]: All Phusion Passenger agents started!
+App 19343 stdout: 
+[ 2015-05-20 21:52:34.9361 19328/0x10e7f9000 Pool2/SmartSpawner.h:298 ]: Preloader for /Users/rob/Sites/elecciones.rob.mx started on PID 19343, listening on unix:/tmp/passenger.1.0.19325/generation-0/backends/preloader.io7ye3
+App 19356 stdout: 
+App 19343 stderr: [ 2015-05-20 21:52:34.9707 19356/0x007ff11985b710(Worker 1) utils.rb:84 ]: *** Exception NoMethodError in Rack application object (undefined method `call' for Sinatra:Module) (process 19356, thread 0x007ff11985b710(Worker 1)):
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+2015/05/20 21:52:34 [error] 19333#0: *4 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", upstream: "passenger:/tmp/passenger.1.0.19325/generation-0/request:", host: "0.0.0.0"
+App 19343 stderr: [ 2015-05-20 21:53:53.1786 19356/0x007ff11985b710(Worker 1) utils.rb:84 ]: *** Exception NoMethodError in Rack application object (undefined method `call' for Sinatra:Module) (process 19356, thread 0x007ff11985b710(Worker 1)):
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+2015/05/20 21:53:53 [error] 19333#0: *7 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "passenger:/tmp/passenger.1.0.19325/generation-0/request:", host: "0.0.0.0:3000"
+App 19343 stderr: [ 2015-05-20 21:53:53.2891 19356/0x007ff11985b710(Worker 1) utils.rb:84 ]: *** Exception NoMethodError in Rack application object (undefined method `call' for Sinatra:Module) (process 19356, thread 0x007ff11985b710(Worker 1)):
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+2015/05/20 21:53:53 [error] 19333#0: *9 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", upstream: "passenger:/tmp/passenger.1.0.19325/generation-0/request:", host: "0.0.0.0:3000", referrer: "http://0.0.0.0:3000/"
+App 19343 stderr: [ 2015-05-20 21:53:56.1150 19356/0x007ff11985b710(Worker 1) utils.rb:84 ]: *** Exception NoMethodError in Rack application object (undefined method `call' for Sinatra:Module) (process 19356, thread 0x007ff11985b710(Worker 1)):
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/rack/thread_handler_extension.rb:74:in `process_request'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler/thread_handler.rb:141:in `accept_and_process_next_request'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler/thread_handler.rb:109:in `main_loop'
+App 19343 stderr: 	from /usr/local/gems/gems/passenger-4.0.59/lib/phusion_passenger/request_handler.rb:455:in `block (3 levels) in start_threads'
+2015/05/20 21:53:56 [error] 19333#0: *7 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "passenger:/tmp/passenger.1.0.19325/generation-0/request:", host: "0.0.0.0:3000"
+[ 2015-05-20 21:53:59.3031 19452/0x7fff789e5300 agents/Watchdog/Main.cpp:538 ]: Options: { 'analytics_log_user' => 'rob', 'cleanup_pidfiles' => 'L3Zhci9mb2xkZXJzLzRqLzJqZjRxejY5NGJ6MDFsejI4MnZtOHMwdzAwMDBnbi9UL3Bhc3Nlbmdlci1zdGFuZGFsb25lLjFzdDd3eHYvdGVtcF9kaXJfdG91Y2hlci5waWQ=', 'default_group' => 'staff', 'default_python' => 'python', 'default_ruby' => '/usr/local/Cellar/ruby/2.2.1/bin/ruby', 'default_user' => 'rob', 'log_level' => '0', 'max_pool_size' => '6', 'passenger_root' => '/var/folders/4j/2jf4qz694bz01lz282vm8s0w0000gn/T/passenger-standalone.1st7wxv/locations.ini', 'passenger_version' => '4.0.59', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_passenger_version' => '4.0.59', 'web_server_pid' => '19451', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '-1', 'web_server_worker_uid' => '-1' }
+[ 2015-05-20 21:53:59.3166 19454/0x7fff789e5300 agents/HelperAgent/Main.cpp:650 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.19451/generation-0/request
+[ 2015-05-20 21:53:59.3228 19456/0x7fff789e5300 agents/LoggingAgent/Main.cpp:321 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.19451/generation-0/logging
+[ 2015-05-20 21:53:59.3230 19452/0x7fff789e5300 agents/Watchdog/Main.cpp:728 ]: All Phusion Passenger agents started!
+App 19471 stdout: 
+[ 2015-05-20 21:54:02.3148 19454/0x107e7c000 Pool2/SmartSpawner.h:298 ]: Preloader for /Users/rob/Sites/elecciones.rob.mx started on PID 19471, listening on unix:/tmp/passenger.1.0.19451/generation-0/backends/preloader.1ggww3z
+App 19484 stdout: 
+App 19471 stderr: 127.0.0.1 - - [20/May/2015:21:54:02 -0500] "HEAD / " 404 456 0.0014
+App 19485 stdout: 
+App 19471 stderr: 127.0.0.1 - - [20/May/2015:21:54:02 -0500] "GET / " 404 460 0.0064
+App 19471 stderr: 127.0.0.1 - - [20/May/2015:21:54:02 -0500] "GET /__sinatra__/404.png " 200 18893 0.0014
+App 19471 stderr: 127.0.0.1 - - [20/May/2015:21:54:36 -0500] "GET / " 404 460 0.0006
+App 19471 stderr: 127.0.0.1 - - [20/May/2015:22:04:44 -0500] "GET /data/candidatos/df-9-12 " 404 493 0.0007
+App 19471 stderr: 127.0.0.1 - - [20/May/2015:22:04:47 -0500] "GET /data/candidatos/df-9-12.json " 404 498 0.0005
+App 19471 stderr: 127.0.0.1 - - [20/May/2015:22:04:54 -0500] "GET /data/candidatoas/df-9-12.json " 404 499 0.0005
+[ 2015-05-20 22:07:46.9584 20732/0x7fff789e5300 agents/Watchdog/Main.cpp:538 ]: Options: { 'analytics_log_user' => 'rob', 'cleanup_pidfiles' => 'L3Zhci9mb2xkZXJzLzRqLzJqZjRxejY5NGJ6MDFsejI4MnZtOHMwdzAwMDBnbi9UL3Bhc3Nlbmdlci1zdGFuZGFsb25lLjJtaTA1bC90ZW1wX2Rpcl90b3VjaGVyLnBpZA==', 'default_group' => 'staff', 'default_python' => 'python', 'default_ruby' => '/usr/local/Cellar/ruby/2.2.1/bin/ruby', 'default_user' => 'rob', 'log_level' => '0', 'max_pool_size' => '6', 'passenger_root' => '/var/folders/4j/2jf4qz694bz01lz282vm8s0w0000gn/T/passenger-standalone.2mi05l/locations.ini', 'passenger_version' => '4.0.59', 'pool_idle_time' => '300', 'prestart_urls' => 'aHR0cDovLzAuMC4wLjA6MzAwMAA=', 'temp_dir' => '/tmp', 'union_station_gateway_address' => 'gateway.unionstationapp.com', 'union_station_gateway_port' => '443', 'user_switching' => 'false', 'web_server_passenger_version' => '4.0.59', 'web_server_pid' => '20731', 'web_server_type' => 'nginx', 'web_server_worker_gid' => '-1', 'web_server_worker_uid' => '-1' }
+[ 2015-05-20 22:07:46.9721 20734/0x7fff789e5300 agents/HelperAgent/Main.cpp:650 ]: PassengerHelperAgent online, listening at unix:/tmp/passenger.1.0.20731/generation-0/request
+[ 2015-05-20 22:07:46.9784 20736/0x7fff789e5300 agents/LoggingAgent/Main.cpp:321 ]: PassengerLoggingAgent online, listening at unix:/tmp/passenger.1.0.20731/generation-0/logging
+[ 2015-05-20 22:07:46.9786 20732/0x7fff789e5300 agents/Watchdog/Main.cpp:728 ]: All Phusion Passenger agents started!
+App 20749 stdout: 
+[ 2015-05-20 22:07:49.1849 20734/0x108264000 Pool2/SmartSpawner.h:298 ]: Preloader for /Users/rob/Sites/elecciones.rob.mx started on PID 20749, listening on unix:/tmp/passenger.1.0.20731/generation-0/backends/preloader.qmm35a
+App 20763 stdout: 
+App 20764 stdout: 
+App 20749 stderr: 127.0.0.1 - - [20/May/2015:22:07:49 -0500] "GET /data/candidatoas/df-9-12.json " 404 499 0.0084
+App 20749 stderr: 127.0.0.1 - - [20/May/2015:22:07:49 -0500] "HEAD / " 404 456 0.0016
