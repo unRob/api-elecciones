@@ -8,7 +8,7 @@ La redistribución y uso como código fuente y/u objeto, con o sin modificacione
 
 * La redistribución del código fuente debe mantener la nota de copyright antes mencionada, esta lista de condiciones y la renuncia de responsabilidades que acompaña esta licencia.
 La redistribución del código objeto debe mantener la nota de copyright antes mencionada, esta lista de condiciones y la renuncia de responsabilidades que acompaña esta licencia en la documentación y en cualquier otro material que se ofrezca con el código objeto.
-* El nombre "Candidatoas Rob.mx", ni el nombre de loas colaboradoreas originales podrá ser usado para promocionar o endosar productos derivados de este software sin un consentimiento previo por escrito de los mismos.
+* El nombre "Elecciones Rob.mx", ni el nombre de loas colaboradoreas originales podrá ser usado para promocionar o endosar productos derivados de este software sin un consentimiento previo por escrito de los mismos.
 * Todo uso de este código fuente y archivos relacionados, en su conjunto o de manera individual, así como el material publicitario que mencione las funciones del mismo deberá incluir la leyenda: "Este producto incluye software desarrollado por el Roberto Hidalgo, el Partido Surrealista Mexicano y Colaboradoreas", así como un enlace a esta licencia, y deberá indicar si se han hecho cambios al mismo.
 * Cualquier uso o implementación de este código fuente y archivos relacionados, en su conjunto o de manera individual, deberá extender los mismos derechos y obligaciones que menciona esta licencia.
 * Se prohibe el uso de este código cuándo el uso mismo incite o resulte en la discriminación de cualquier individuo o grupo de individuos, en función de su género, orientación sexual, educación y/o poder adquisitivo.
