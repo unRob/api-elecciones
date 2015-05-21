@@ -18,6 +18,12 @@ before do
   content_type 'application/json'
 end
 
+
+get '/' do
+  content_type 'application/javascript'
+  File.open('./README.md', 'r').read.scan(/```([^`]+)/).first
+end
+
 def distrito coords
   url = sprintf(RPATITO, *coords);
   res = open(url).read;
